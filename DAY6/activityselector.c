@@ -38,7 +38,7 @@ void activity(int **arr,int n)
 }
 int main()
 {
-	clock_t start,end;
+    clock_t start,end;
     int n;
     printf("Enter number of activity : ");
     scanf("%d", &n);
@@ -62,10 +62,10 @@ int main()
         scanf("%d", &activities[i][2]);
     }
 
-	start=clock();
+    start=clock();
     activity(activities, n);
     end=clock();
-	double total_t=((double)(end-start))/CLOCKS_PER_SEC;
+    double total_t=((double)(end-start))/CLOCKS_PER_SEC;
     int *ans = (int *)calloc(n, sizeof(int));
     for (i = 0; i < n; i++)
     {
